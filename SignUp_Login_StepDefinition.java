@@ -29,12 +29,6 @@ public class SignUp_Login_StepDefinition extends CommonLibrary {
 		super();
 	}	
 		
-		@Then ("^User should be able to see Sign Up landing page in Android$")
-		public void user_should_be_able_to_see_sign_up_landing_page_in_Android() throws Throwable{
-			CommonLibrary.longTime();
-			Assert(CommonLibrary.isElementPresentVerification(SignUpConstants_Android.SIGN_UP_LANDING_PAGE),
-					"The Sign Up landing page is Displayed");
-		}
 		
 		@When ("^User tap Sign Up with Email button in Android$")
 		public void user_tap_sign_up_with_email_button_in_Android() throws Throwable{
